@@ -30,6 +30,7 @@ public class brickk : MonoBehaviour
         hits--;
         if(hits <= 0)
         {
+            GameManager.Instance.Score += points;
             Destroy(gameObject);
         }
         prenderer.sharedMaterial = hitMaterial;
